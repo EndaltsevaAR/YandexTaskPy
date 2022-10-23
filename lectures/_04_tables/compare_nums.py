@@ -4,6 +4,7 @@ Description:
 Необходимо проверить, можно ли получить первое из второго перестановкой цифр
 """
 
+
 def solution(x, y):
     def count_digits(number):
         digits = [0] * 10
