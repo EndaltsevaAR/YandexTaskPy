@@ -15,3 +15,12 @@ Majority (в дословном переводе "большинство") — �
 Формат вывода
 Выведите majority массива.
 """
+n = int(input())
+nums = list(map(int, input().split()))
+cnt = {}
+for now in nums:
+    cnt[now] = cnt.get(now, 0) + 1
+for value in cnt:
+    if cnt[value] > n // 2:
+        ans = value
+print(ans)
