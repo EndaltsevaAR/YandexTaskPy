@@ -6,7 +6,7 @@
 
 def make_prefix_zeros(nums):
     prefix_zeros = [0] * (len(nums) + 1)
-    for i in  range(1, len(nums) + 1):
+    for i in range(1, len(nums) + 1):
         if nums[i-1] == 0:
             prefix_zeros[i] = prefix_zeros[i-1] + 1
         else:
